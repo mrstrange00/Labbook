@@ -1,0 +1,9 @@
+div.a {
+  text-transform: uppercase;
+  text-indent: 50px;
+}
+
+div.b {
+  text-transform: lowercase;
+  text-indent: -2em;
+}
