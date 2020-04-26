@@ -1,0 +1,81 @@
+<html>
+<h1>Vijay Pratap Singh<h1>
+<head>
+    <title>Candidate Details</title>
+    <style>
+        .requide {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="submit.php">
+        <table align="center" style="background-color:skyblue;" ; " border="2 ">
+            <tr>
+                <td><label>Name</label><span class="requide "> *</span></td>
+                <td><input type="text " name="name " required maxlength="15 " pattern="[A-Za-z]+ "></td>
+            </tr>
+            <tr>
+                <td><label>Password</label><span class="requide "> *</span></td>
+                <td><input type="password " name="pass " required maxlength="15 " pattern="[A-Za-z]+ "></td>
+            </tr>
+            <tr>
+                <td><label>Phone Number</label><span class="requide "> *</span></td>
+                <td>
+                    <input type="tel " name="number " required>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Gender</label><span class="requide "> *</span></td>
+                <td>
+                    <input type="radio " name="gender " value="male " required>Male
+                    <input type="radio " name="gender " value="female " required>Female
+                </td>
+            </tr>
+            <tr>
+                <td><label>Date of Birth</label><span class="requide "> *</span></td>
+                <td><input type="date " name="date " required></td>
+            </tr>
+            <tr>
+                <td><label>Email</label><span class="requide "> *</span></td>
+                <td><input type="email " name="email " required></td>
+            </tr>
+            <tr>
+                <td><label>Highest Qualification</label><span class="requide "> *</span></td>
+                <td>
+                    <select name="qualification " required>
+                        <option>HSC</option>
+                        <option>SSC</option>
+                        <option>Graduate</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Course intrested in</label><span class="requide "> *</span></td>
+                <td>
+                    <input type="checkbox " name="java " value="java ">Java
+                    <input type="checkbox " name="html " value="html ">HTML
+                    <input type="checkbox " name="css3 " value="css3 ">Java
+                    <input type="checkbox " name="Angularjs " value="Angularjs ">Angular JS
+                    <input type="checkbox " name="JQuery " value="JQuery ">JQuery
+                </td>
+            </tr>
+            <tr>
+                <td>Comments (Mentions External Certification if any)</td>
+                <td><textarea role="30 " cols="60 " name="comments "></textarea></td>
+            </tr>
+            <tr>
+                <td><label>Upload Degree / External Certificate</label><span class="requide "> *</span></td>
+                <td><input type="file " name="file "></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit " value="Submit information ">
+                    <input type="reset "></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
