@@ -1,0 +1,14 @@
+<div class="container">
+
+  <h2>Angular Operation</h2>
+  <form class="form" (ngSubmit)="displayDetails()" method="GET">
+    ID: <input type="text" class="form-control col-sm-5" [(ngModel)]="id1" name="id1"><br>
+    Name: <input type="text" class="form-control col-sm-5" [(ngModel)]="name1" name="name1"><br>
+    Designation: <input type="text" class="form-control col-sm-5" [(ngModel)]="designation1" name="designation1"><br>
+    Salary: <input type="text" class="form-control col-sm-5" [(ngModel)]="salary1" name="salary1"><br>
+    <input type="submit" class="btn btn-warning" value="Submit">
+  </form>
+</div><br><br>
+<div class="container" *ngIf="check2">
+  {{id1}}  {{name1}}  {{designation1}}  {{salary1}}
+</div>

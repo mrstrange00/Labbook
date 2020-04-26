@@ -1,0 +1,21 @@
+<div class="container">
+  <br><h1>VIjay</h1>
+  <br>
+  
+<table class="table">
+  <thead >
+    <tr class="bg-danger">
+      <th><a (click)="sortID()"><u>ID</u></a></th>
+      <th><a (click)="sortName()"><u>Name</u></a></th>
+      <th><a (click)="sortCost()"><u>Cost</u></a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of productList">
+      <td>{{product.productId}}</td>
+      <td>{{product.productName}}</td>
+      <td>{{product.productCost}}</td>
+    </tr>
+  </tbody>
+</table><br><br>
+</div>
